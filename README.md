@@ -29,7 +29,7 @@ to predict.
   ### github
 https://github.com/baig8/CGD-Webserver
 ### heroku deployment
- https://cgdserver.herokuapp.com/
-Email: [riazalibaig01@gmail.com](mailto:vaibhav.hariramani01@gmail.com)
+ [https://cgdserver.herokuapp.com/](https://cgdserver.herokuapp.com/)
+Email: [riazalibaig01@gmail.com](mailto:riazalibaig01@gmail.com)
 
 "# CGD_file" 
