@@ -6,8 +6,6 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8842692518121868"
-     crossorigin="anonymous"></script>
 
   <title>Webservver for Cancer Gene Detection</title>
   <meta content="" name="descriptison">
@@ -25,32 +23,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="../static/css/style.css">
 </head>
-<body text="black">
-
-<!---            --------------------------------- ---->
-<!---
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">CGD Logo</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
--->
-<!--------------------------------------------->
+<body text="black" style="background-color:LightBlue;">
 
 	<div class="login">
 		<!--Get input for predict the cancer-->
@@ -62,29 +35,30 @@
 				<input type="text" name="mean_perimeter" placeholder="perimeter" required="required" />
 				<input type="text" name="mean_area" placeholder="area" required="required" />
 				<input type="text" name="mean_smoothness" placeholder="smoothness" required="required" />
-				<input type="text" name="mean compactness" placeholder="compactness" required="required" />
-				<input type="text" name="mean_concavity" placeholder="concavity" required="required" />
-				<input type="text" name="mean_concave_points" placeholder="concave points" required="required" />
-				<input type="text" name="mean_symmetry" placeholder="symmetry" required="required" />
-				<input type="text" name="mean_fractal_dimension" placeholder="fractal dimension" required="required" />
+				<input type="text" name="mean_compactness" placeholder="compactness" required="required" />
 				<br>
-				
-				<input type="text" name="radius_error" placeholder="radius error" required="required" />
-				<input type="text" name="texture_error" placeholder="texture error" required="required" />
-				<input type="text" name="perimeter_error" placeholder="perimeter error " required="required" />
-				<input type="text" name="area_error" placeholder="area error" required="required" />
-				<input type="text" name="smoothness_error" placeholder="smoothness error" required="required" />
-				<input type="text" name="compactness_error" placeholder="compactness error" required="required" />
-				<input type="text" name="concavity_error" placeholder="concavity error" required="required" />
-				<input type="text" name="concave_points_error" placeholder="concave points error" required="required" />
-				<input type="text" name="symmetry_error" placeholder="symmetry error" required="required" />
-				<input type="text" name="fractal_dimension_error" placeholder="fractal dimension error" required="required" />
+				<input type="text" name="mean_concavity" placeholder="worst concavity" required="required" />
+				<input type="text" name="mean_concave_points" placeholder="worst concave points" required="required" />
+				<input type="text" name="mean_symmetry" placeholder="worst symmetry" required="required" />
+				<input type="text" name="mean_fractal_dimension" placeholder="worst fractal dimension" required="required" />
+				<input type="text" name="radius_error" placeholder="mean radius" required="required" />
+				<input type="text" name="texture_error" placeholder="mean texture" required="required" />
 				<br>
-				
-				<input type="text" name="worst_radius" placeholder="worst radius" required="required" />
-				<input type="text" name="worst_texture" placeholder="worst texture" required="required" />
-				<input type="text" name="worst_perimeter" placeholder="worst perimeter" required="required" />
-				<input type="text" name="worst_area" placeholder="worst area" required="required" />
+				<input type="text" name="perimeter_error" placeholder="mean perimeter" required="required" />
+				<input type="text" name="area_error" placeholder="mean area" required="required" />
+				<input type="text" name="smoothness_error" placeholder="mean smoothness" required="required" />
+				<input type="text" name="compactness_error" placeholder="mean compactness" required="required" />
+				<input type="text" name="concavity_error" placeholder="mean concavity" required="required" />
+				<input type="text" name="concave_points_error" placeholder="mean concave points" required="required" />
+				<br>
+				<input type="text" name="symmetry_error" placeholder=" meaen symmetry" required="required" />
+				<input type="text" name="fractal_dimension_error" placeholder="mean fractal dimension " required="required" />
+				<input type="text" name="worst_radius" placeholder="radius error" required="required" />
+				<input type="text" name="worst_texture" placeholder="texture error" required="required" />
+				<input type="text" name="worst_perimeter" placeholder="perimeter error" required="required" />
+				<input type="text" name="worst_area" placeholder="area error" required="required" />
+				<br>
+
 				<input type="text" name="worst_smoothness" placeholder="worst smoothness" required="required" />
 				<input type="text" name="worst_compactness" placeholder="worst compactness" required="required" />
 				<input type="text" name="worst_concavity" placeholder="worst concavity" required="required" />
@@ -92,7 +66,6 @@
 				<input type="text" name="worst_symmetry" placeholder="worst symmetry" required="required" />
 				<input type="text" name="worst_fractal_dimension" placeholder="worst fractal dimension" required="required" />
 				<br>
-				
 
 				<!-- show button-->
 				<div class="button_cont" align="center"><a class="button_css">
@@ -114,27 +87,36 @@
 				</h2>
 
 		</ul>
-				<br>
-				<!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
-<!--
-<div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
-     <a itemprop='url' href=https://www.fiverr.com/rayz_ab rel="nofollow" target="_blank" style='display: inline-block;'>
-        <div class='fiverr-seller-content' id='fiverr-seller-widget-content-8c4b4edd-670c-463a-8112-fa97f8b82993' itemprop='contentURL' style='display: none;'></div>
-        <div id='fiverr-widget-seller-data' style='display: none;'>
-            <div itemprop='name' >rayz_ab</div>
-            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
-            <div itemprop='jobtitle'>Seller</div>
-            <div itemprop='description'></div>
-        </div>
-    </a>
-</div>
+				</center>
+		</div >
 
-<script id='fiverr-seller-widget-script-8c4b4edd-670c-463a-8112-fa97f8b82993' src='https://widgets.fiverr.com/api/v1/seller/rayz_ab?widget_id=8c4b4edd-670c-463a-8112-fa97f8b82993' data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script>
 
-      </form>
--->
+	<center>
+
+
+			<form action="{{ url_for('home')}}"method="POST">
+
+				<h3 style="background-color:DodgerBlue;">Predict From Auto Loaded test file </h3><h4 style="color:#CC9900"> View Prediction using data file</h4>
+
+				<!-- show button-->
+				<div class="button_cont" align="center"><a class="button_css2">
+					<button text="blue" style="color:#800080" type="submit" class="btn btn-primary btn-block btn-large2"><strong><h4>CLICK TO PREDICT </h4></strong>
+					</button></a>
+				</div>
+			</form>
+
+
+	</center> <!--Show predicted output using ML model-->
+	<div>
+		<center>
+
+			<p>
+				<h3 text="blue" style="color:#800090"> {{ name}} </h3>
+			</p>
+
 		</center>
 	</div >
+	</div>
 
 	</body>
 	</html>
