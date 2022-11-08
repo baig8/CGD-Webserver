@@ -7,5 +7,6 @@ pandas
 scikit-learn
 sklearn
 xgboost
-tkinter
+from tkinter.filedialog import askopenfilename
+
 werkzeug
