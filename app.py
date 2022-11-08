@@ -38,15 +38,15 @@ def home():
    # print(filename)
     #for only csv ttype files
 
-    #filetypes =(
-     #   ('Text files', '*.csv'),
-    #)
-    #filename = askopenfilename(title='Select a file...',
+ #   filetypes =(
+  #      ('Text files', '*.csv'),
+   # )
+   # filename = askopenfilename(title='Select a file...',
     #filetypes=filetypes,)
 
     with open('newfile.csv', newline='') as csv_file:
 
-    with open(filename, newline='') as csv_file:
+#    with open(filename, newline='') as csv_file:
         data = csv.DictReader(csv_file)
         for row in data:
             # print(row)
