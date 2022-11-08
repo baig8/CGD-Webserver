@@ -1,14 +1,19 @@
-import numpy as np
-# from xgboost import XGBClassifier
-# from sklearn.ensemble import XGBoost as xgb
-# from xgboost.sklearn import XGBClassifier
-import pickle
-# from sklearn.externals import joblib
-from sklearn.ensemble import RandomForestClassifier
-# import xgboost as xgb
 import pandas as pd
 import csv
 from flask import Flask, request, render_template
+import numpy as np
+import pickle
+from tkinter.filedialog import askopenfilename
+
+from sklearn.ensemble import RandomForestClassifier
+
+
+# from sklearn.externals import joblib
+# import xgboost as xgb
+# from xgboost import XGBClassifier
+# from sklearn.ensemble import XGBoost as xgb
+# from xgboost.sklearn import XGBClassifier
+
 #-----------------------------------------------------
 
 app = Flask(__name__)
@@ -28,7 +33,20 @@ def home():
 
     name = request.args.get("name")
 
-    with open('newfile.csv', newline='') as csv_file:
+    #use filename var which uses tkinter to open a file and pass it as csv
+
+   # print(filename)
+    #for only csv ttype files
+
+    filetypes =(
+        ('Text files', '*.csv'),
+    )
+    filename = askopenfilename(title='Select a file...',
+    filetypes=filetypes,)
+
+    #with open('newfile.csv', newline='') as csv_file:
+
+    with open(filename, newline='') as csv_file:
         data = csv.DictReader(csv_file)
         for row in data:
             # print(row)
@@ -166,6 +184,7 @@ def home():
         #     print(res_val)
 
             return render_template('index.html', name =res_val)
+        filename.close()
 
 
 @app.route('/predict', methods=['POST'])
