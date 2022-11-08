@@ -3,7 +3,7 @@ import csv
 from flask import Flask, request, render_template
 import numpy as np
 import pickle
-from tkinter.filedialog import askopenfilename
+#from tkinter.filedialog import askopenfilename
 
 from sklearn.ensemble import RandomForestClassifier
 
@@ -38,13 +38,13 @@ def home():
    # print(filename)
     #for only csv ttype files
 
-    filetypes =(
-        ('Text files', '*.csv'),
-    )
-    filename = askopenfilename(title='Select a file...',
-    filetypes=filetypes,)
+    #filetypes =(
+     #   ('Text files', '*.csv'),
+    #)
+    #filename = askopenfilename(title='Select a file...',
+    #filetypes=filetypes,)
 
-    #with open('newfile.csv', newline='') as csv_file:
+    with open('newfile.csv', newline='') as csv_file:
 
     with open(filename, newline='') as csv_file:
         data = csv.DictReader(csv_file)
