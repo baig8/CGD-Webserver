@@ -39,9 +39,8 @@
 				<br>
 				<input type="text" name="mean_concavity" placeholder="concavity" required="required" />
 				<input type="text" name="mean_concave_points" placeholder="concave points" required="required" />
-				<input type="text" name="mean_symmetry" placeholder="worst symmetry" required="required" />
+				<input type="text" name="mean_symmetry" placeholder="symmetry" required="required" />
 				<input type="text" name="mean_fractal_dimension" placeholder="fractal dimension" required="required" />
-				
 				<input type="text" name="radius_error" placeholder="mean radius" required="required" />
 				<input type="text" name="texture_error" placeholder="mean texture" required="required" />
 				<br>
@@ -54,7 +53,6 @@
 				<br>
 				<input type="text" name="symmetry_error" placeholder=" mean symmetry" required="required" />
 				<input type="text" name="fractal_dimension_error" placeholder="mean fractal dimension " required="required" />
-				
 				<input type="text" name="worst_radius" placeholder="radius error" required="required" />
 				<input type="text" name="worst_texture" placeholder="texture error" required="required" />
 				<input type="text" name="worst_perimeter" placeholder="perimeter error" required="required" />
@@ -64,7 +62,7 @@
 				<input type="text" name="worst_smoothness" placeholder="smoothness error" required="required" />
 				<input type="text" name="worst_compactness" placeholder="compactness error" required="required" />
 				<input type="text" name="worst_concavity" placeholder="concavity error" required="required" />
-				<input type="text" name="worst_concave_points" placeholder="concave points error" required="required" />
+				<input type="text" name="worst_concave_points" placeholder="oncave points error" required="required" />
 				<input type="text" name="worst_symmetry" placeholder="symmetry error" required="required" />
 				<input type="text" name="worst_fractal_dimension" placeholder="fractal dimension error" required="required" />
 				<br>
@@ -85,7 +83,7 @@
 			<center>
 				<h1 style="color:Red; border:2px solid Tomato">{{ prediction_text}}</h1>
 				<h2>
-					<p style="color:#339900; font-size:30px" >Dataset used: <a href="https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)" style="color: orange;"> UC Irvine Machine Learning Repository</a></p>
+					<p style="color:#339900; font-size:30px" >Dataset used: <a href="https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)" style="color: orange;"> UCI Machine Learning Repository</a></p>
 				</h2>
 
 		</ul>
@@ -113,7 +111,10 @@
 		<center>
 
 			<p>
-				<h3 text="blue" style="color:#800090"> {{ name}} </h3>
+				<h1 style="color:green; border:2px solid green">{{ name}}</h1>
+
+
+
 			</p>
 
 		</center>
